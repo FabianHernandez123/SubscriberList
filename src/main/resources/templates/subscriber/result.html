@@ -3,13 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Subscriber Sign-Up</title>
+<link th:replace="subscriber/fragments/headLink">
 </head>
 <body>
+	<div class="container-fluid">
 	<h3>Subscriber Sign-up Form</h3>
 	<p>Thank you for signing up!</p>
 	<h4>Subscriber:</h4>
 	<p th:text="${firstName}" />
 	<p th:text="${lastName}" />
 	<p th:text="${username}" />
+	</div>
+	<script th:replace="subscriber/fragments/scripts"></script>
 </body>
 </html>

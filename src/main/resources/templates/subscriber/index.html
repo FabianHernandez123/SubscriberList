@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Subscriber List</title>
+<link th:replace="subscriber/fragments/headLink">
 </head>
 <body>
+	<div class="container-fluid">
 	<h1>Welcome to Our Awesome Site!</h1>
 	<h3>Subscribe to our list. Sign-up below!</h3>
 	<p>Please use the form below to sign up as a subscriber:</p>
@@ -28,5 +30,7 @@
 			</tr>
 		</table>
 	</form>
+	</div>
+	<script th:replace="subscriber/fragments/scripts"></script>
 </body>
 </html>
