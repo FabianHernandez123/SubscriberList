@@ -10,10 +10,12 @@
 	<h3>Subscriber Sign-up Form</h3>
 	<p>Thank you for signing up!</p>
 	<h4>Subscriber:</h4>
-	<p th:text="${firstName}" />
-	<p th:text="${lastName}" />
-	<p th:text="${username}" />
-	</div>
+	<p th:text="'First Name: ' + ${firstName}" />
+	<p th:text="'Last Name: ' + ${lastName}" />
+	<p th:text="'Username: ' + ${username}" />
+	<a href="/subscribers">See all the subscribers</a><br>
+	<a href="/index">Get back to entry page</a>
+	</div>		
 	<script th:replace="subscriber/fragments/scripts"></script>
 </body>
 </html>

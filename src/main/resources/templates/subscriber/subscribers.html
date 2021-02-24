@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Subscribers</title>
+<link th:replace="subscriber/fragments/headLink">
+</head>
+<body>
+	<div class="container-fluid">
+	<h3>Below are the first and last name of each subscriber</h3>
+	<br>
+	<table class="table table-bordered">
+		<thead>
+		<tr>
+		<th scope="col">First Name</th>
+		<th scope="col">Last Name</th>
+		</tr>
+		</thead>		
+		<tbody th:each="subscriber:${subscribers}">		
+    	<td th:text="${subscriber.firstName}"></td>
+    	<td th:text="${subscriber.lastName}"></td>
+    	</tbody>    	    
+    </table>
+    <a href="#">See Details</a><br>
+    <a href="/index">Get back to entry page</a>
+    </div>
+	<script th:replace="subscriber/fragments/scripts"></script>
+</body>
+</html>
