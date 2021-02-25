@@ -13,9 +13,15 @@
 	<p th:text="'First Name: ' + ${firstName}" />
 	<p th:text="'Last Name: ' + ${lastName}" />
 	<p th:text="'Username: ' + ${username}" />
-	<a href="/subscribers">See all the subscribers</a><br>
-	<a href="/">Get back to subscription sign-up</a>
-	</div>		
+	<a href="/subscribers">See all the Subscribers</a><br>
+	<a href="/">Get Back to Subscription Sign-Up</a>		
+	</div>
+	<div>
+    		<footer class="container-fluid" style="text-align: center; position: absolute; bottom: 0;">
+    		<p style="color:#24166A;">© FH Corp 2021<p>
+    		</footer>
+	</div>
+	
 	<script th:replace="subscriber/fragments/scripts"></script>
 </body>
 </html>
